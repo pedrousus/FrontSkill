@@ -1,0 +1,92 @@
+main>header:has(nav){
+    max-width: 1100px;
+    gap: 1rem;
+}
+
+main>header>nav{
+    flex-basis: 1;
+    flex-grow: 1;
+    ul{
+        gap: .5rem;
+    }
+    a{
+        --_color-visitado: var(--color-primary-400);
+    }
+    li:last-child{
+        p{
+            color: var(--color-primary-800);
+        }
+    }
+}
+
+article>div{
+    display: flex;
+    gap: 2rem;
+    ul{
+        font-size: 1.175rem;
+        align-items: center;
+        text-align: center;
+        width: 130px;
+        justify-content: space-around;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    li:hover{
+        border-bottom: 2px solid transparent;
+    }
+    .Princi{
+        color: var(--color-green-900);
+        background-color: var(--color-green-200);
+        width: 100%;
+        padding-block: .3rem;
+    }
+    .Inter{
+        color: var(--color-yellow-900);
+        background-color: var(--color-yellow-200);
+        width: 100%;
+        padding-block: .3rem;
+    }
+    .Avan{
+        color: var(--color-red-900);
+        background-color: var(--color-red-200);
+        width: 100%;
+        padding-block: .3rem;
+    }
+    .Lecciones{
+        color: var(--color-primary-900);
+        background-color: var(--color-primary-400);
+        width: 100%;
+        padding-block: .3rem;
+    }
+    .Materias{
+        color: #f3f2fb;
+        background-color: #53416e;
+        width: 100%;
+        padding-block: .3rem;
+    }
+}
+
+.Principiante{
+    --color-borde: var(--color-green-600);
+    --color-materia-hover: var(--color-green-100);
+    --color-box: var(--color-green-500);
+    --color-box-shadow-hover: var(--color-green-900);
+}
+
+.Intermedio{
+    --color-borde: var(--color-yellow-600);
+    --color-materia-hover: var(--color-yellow-100);
+    --color-box: var(--color-yellow-500);
+    --color-box-shadow-hover: var(--color-yellow-900);
+}
+
+.Avanzado{
+    --color-borde: var(--color-red-600);
+    --color-materia-hover: var(--color-red-100);
+    --color-box: var(--color-red-500);
+    --color-box-shadow-hover: var(--color-red-900);
+}
+
+.Mate{
+    --color-icono: var(--color-blue-500)
+}

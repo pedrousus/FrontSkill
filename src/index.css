@@ -1,0 +1,128 @@
+:root{
+  --color-green-100: #f5faeb;
+  --color-green-200: #eaf3d4;
+  --color-green-500: #80ac36;
+  --color-green-600: #628927;
+  --color-green-900: #36481f;
+
+  --color-blue-100: #edf7ff;
+  --color-blue-500: #0A3CB4;
+  --color-blue-900: #0b43c2;
+
+  --color-yellow-100: #fefcec;
+  --color-yellow-200: #fcf4c9;
+  --color-yellow-500: #eca614;
+  --color-yellow-600: #d17f0e;
+  --color-yellow-900: #8d4713;
+
+  --color-brown-100: #f9f8ed;
+  --color-brown-500: #694A2A;
+  --color-brown-900: #342114;
+
+  --color-red-100: #fef2f2;
+  --color-red-200: #ffe1e1;
+  --color-red-500: #E22020;
+  --color-red-600: #be1717;
+  --color-red-900: #9d1717;
+
+  --color-primary-400: #BCB4FE;
+  --color-primary-800: #4c1fb8;
+  --color-primary-900: #210D5B;
+  
+  --_color-visitado: var(--color-visitado, var(--color-primary-800));
+  letter-spacing: .05rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box; 
+}
+
+body{
+  font-size: 1.125rem;
+  font-family: system-ui, sans-serif;
+  background-color: #F7F7F9;
+  opacity: 1;
+  background-image:  radial-gradient(#bcb4fe 0.9px, transparent 0.9px), radial-gradient(#bcb4fe 0.9px, #F7F7F9 0.9px);
+  background-size: 36px 36px;
+  background-position: 0 0,18px 18px;
+}
+
+h1, h2, h3, h4, h5 ,h6{
+  text-wrap: balance;
+}
+
+header{
+  --_color-visitado: #495168;
+  color: #495168;
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+  background-color: #EEF0FF;
+  border-bottom: 3px solid #000;
+  padding-block: 1rem;
+
+  h2{
+    --_color-visitado: #241B4B;
+  }
+  a:hover{
+    --color-link-hov: var(--color-primary-800);
+  } 
+}
+
+
+p{
+  max-width: 85ch;
+  text-wrap: pretty;
+}
+
+footer{
+  background-color: var(--color-primary-400);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: auto;
+  padding-block: 2rem;
+}
+
+a:link {
+  --_color-link: var(--color-link, #3EB9E7);
+  color: var(--_color-link);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--_color-visitado);
+  text-decoration: none;
+}
+
+a:hover {
+  --_color-link-hov: var(--color-link-hov, var(--color-primary-400));
+  color: var(--_color-link-hov);
+}
+
+.error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80svh;
+  h1{
+    text-align: center;
+    color: #f53e3e;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

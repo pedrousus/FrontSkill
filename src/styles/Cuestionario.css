@@ -1,0 +1,67 @@
+.Cuestionario{
+    width: 90ch;
+    background-color: #fff;
+    border: 2px solid var(--color-primary-900);
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+}
+.Cuestionario>h4{
+    font-size: 1.7rem;
+    color: var(--color-primary-900);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+ 
+.Cuestionario > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+ 
+.Cuestionario >ul li{
+    display: block;
+    border: 2px solid var(--color-primary-900);
+    padding-inline: 2rem;
+    padding-block: .5rem;
+    border-radius: 1rem;
+}
+ 
+.Cuestionario >ul li:hover{
+    background-color: #e8e1f3;
+}
+ 
+.Cuestionario > button:hover{
+    background-color: #7c59a9;
+}
+.Cuestionario>div{
+    align-self: center;
+    margin-top: .5rem;
+    color: #495168;
+}
+
+.correct{
+    background: #dffff2;
+    border-color: green;
+}
+
+.wrong{
+    background: #FFEBEB;
+    border-color: red;
+}
+
+.Cuestionario>a{
+    width: fit-content;
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    border: 2px solid var(--color-primary-800);
+    border-radius: 1rem;
+    align-self: center;
+}
+
+.Cuestionario>a:hover{
+    background-color: var(--color-primary-400);
+    color: var(--color-primary-900);
+}

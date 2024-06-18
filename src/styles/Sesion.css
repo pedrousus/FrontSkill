@@ -1,0 +1,110 @@
+main:has(form){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2rem;
+    min-height: 80svh;
+}
+
+section:has(form){
+    border: 2px solid var(--color-primary-800);
+    border-radius: 1.5rem;
+    padding-block: 3rem;
+    padding-inline: 1rem;
+    width: 500px;
+    background-color: #FFF;
+    box-shadow: -10px 10px 10px var(--color-primary-900);
+}
+
+section > h2{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-primary-900);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label{
+    color: var(--color-primary-800);
+    font-size: 1.2rem;
+}
+
+input, select{
+    border: 2px solid var(--color-primary-900);
+    border-radius: 2rem;
+    padding-inline: 2rem;
+    font-size: 1rem;
+    padding-block: .5rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    background-color: transparent;
+}
+input:hover, select:hover{
+    background-color: #f4f3ff;
+    border: 2px solid #5a25dc;
+}
+
+select{
+    background-color: #d9d5ff
+}
+input:focus, button:focus, select:focus{
+    outline: 3px solid #5a25dc;
+    outline-offset: 3px;
+    border: 2px solid #d9d5ff;
+    background-color: #f4f3ff;
+}
+
+button{
+    margin-top: 1.5rem;
+    background-color: #EBE9FE;
+    border: 2px solid var(--color-primary-800);
+    border-radius: .8rem;
+    padding-inline: 3rem;
+    padding-block: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    align-self: center;
+}
+
+button:hover, button:focus{
+    background-color: #7a5af8;
+    color: #EBE9FE;   
+}
+
+span{
+    font-size: 1rem;
+    color: var(--color-red-500);
+    display: none;
+}
+
+input:invalid[focus="true"]{
+    background-color: var(--color-red-100);
+    border: 2px solid var(--color-red-500);
+}
+
+input:invalid[focus="true"] ~ span[focus="true"]{
+    display: block;
+}
+
+select option:first-child {
+    display: none;
+}
+
+section ~ a{
+    margin-top: 1rem;
+    border: 2px solid transparent;
+    font-size: 1.25rem;
+    border-bottom: 2px solid var(--color-primary-400);
+    padding-inline: 3rem;
+    transition: all 5ms;
+}
+

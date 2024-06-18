@@ -1,0 +1,21 @@
+footer > div > nav > ul{
+  flex-direction: column;
+  gap: .3rem;
+  --_color-visitado: #f4f3ff;
+  --color-link: #f4f3ff;
+
+  a{
+    --color-link: #f4f3ff;
+    font-size: 1rem;
+  }
+
+  a:hover{
+    --color-link-hov: #f4f3ff;
+    border-bottom: 2px solid #250f66;
+  }
+}
+
+footer > div > h5{
+  font-size: 1.3rem;
+  color: #495168;
+}
