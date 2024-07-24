@@ -29,6 +29,12 @@ import { TaskProvider } from "./context/taskContext.jsx";
 import Lec2SumRes from "./components/ExamSumasRestas2.jsx";
 import LecEspasss from "./components/espano.jsx";
 import LecOrtografia from "./components/ortografiaRes.jsx";
+import LecFotos from "./components/ExamFoto.jsx";
+import Flora from "./pages/MateriaCiencias/Flora.jsx";
+import Fauna from "./pages/MateriaCiencias/Fauna.jsx";
+import Fisica from "./pages/MateriaCiencias/Fisica.jsx";
+import Quimica from "./pages/MateriaCiencias/Quimica.jsx";
+import CuerpoHumano from "./pages/MateriaCiencias/CuerpoHumano.jsx";
 
 const inicioSesionRegistroRoutes = [
   {
@@ -54,6 +60,26 @@ const otrasRutas = [
   {
     path: "/Ciencias",
     element: <Ciencias />,
+  },
+  {
+    path: "/Flora",
+    element: <Flora/>,
+  },
+  {
+    path: "/Fauna",
+    element: <Fauna/>,
+  },
+  {
+    path: "/CuerpoHumano",
+    element: <CuerpoHumano/>,
+  },
+  {
+    path: "/Fisica",
+    element: <Fisica/>,
+  },
+  {
+    path: "/Quimica",
+    element: <Quimica/>,
   },
   {
     path: "/Español",
@@ -118,6 +144,9 @@ const otrasRutas = [
   {
     path: "/LecOrtografia",
     element: <LecOrtografia />,
+  },{
+    path: "/LecFotos",
+    element: <LecFotos />,
   },
   
 
