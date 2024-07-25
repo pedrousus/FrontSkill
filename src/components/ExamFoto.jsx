@@ -3,13 +3,13 @@ import Footer from './Footer,'
 import Header from './Header'
 import '../styles/App.css'
 import '../styles/Cuestionario.css'
-import {data} from '../assets/fotosintesisCuestionario';
+import {respfotosintesis} from '../assets/fotosintesisCustionario';
 import { scoreRequest } from '../api/task'
 
   
 export default function LecFotos () {
   let [index, setIndex] = useState(0);
-  let [question, setQuestion] = useState(data[index]);
+  let [question, setQuestion] = useState(respfotosintesis[index]);
   let [lock, setLock] = useState(false);
   let [score, setScore] = useState(0);
   let [result, setResult] = useState(false);
@@ -23,7 +23,7 @@ export default function LecFotos () {
   const enviarScoreAlServidor = async () => {
     try {
       const response = await scoreRequest(score, "Leccion1Fotosintesis");
-      setRespuestaServidor(response.data);
+      setRespuestaServidor(response.respfotosintesis);
     } catch (error) {
       console.error('Error al enviar el score al servidor:', error);
     }
@@ -46,7 +46,7 @@ export default function LecFotos () {
  
   const nextQuestion = () =>{
       if (lock === true){
-        if(index === data.length-1){
+        if(index === respfotosintesis.length-1){
 
           setResult(true);
 
@@ -55,7 +55,7 @@ export default function LecFotos () {
 
         }
           setIndex(++index);
-          setQuestion(data[index]);
+          setQuestion(respfotosintesis[index]);
           setLock(false);
           optArray.map((option)=>{
               option.current.classList.remove("wrong");
@@ -79,7 +79,7 @@ export default function LecFotos () {
     <div className="APP">
       <Header />
       <main>
-        <h1>Cuestionario 2: Sumas y Restas</h1>
+        <h1>Cuestionario 1: Fotosíntesis</h1>
         <section className="Cuestionario">
             {result?<></>:<>
           {<h4>{index+1}.- Pregunta {question.question}</h4>  }
@@ -93,11 +93,11 @@ export default function LecFotos () {
           
           <button onClick={nextQuestion}>Next</button>
           
-          <div>{index+1} de {data.length} preguntas</div></>}
+          <div>{index+1} de {respfotosintesis.length} preguntas</div></>}
 
           {result?<>
           
-          <h2>Obtuviste {score} de {data.length}</h2>
+          <h2>Obtuviste {score} de {respfotosintesis.length}</h2>
           <a href='/Flora'>Regresar</a>
           </>:<></>
           }
