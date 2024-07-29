@@ -1,8 +1,39 @@
 import '../styles/App.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer,'
+import { useTask } from '../context/taskContext'
+import { useEffect, useState } from 'react';
+
 
 export default function Redaccion() {
+
+  const { getTask } = useTask();
+
+  const [calificaciones, setCalificaciones] = useState(null);
+  useEffect(() => {
+    const fetchCalificaciones = async () => {
+      try {
+        const calificacionesData = await getTask();
+        setCalificaciones(calificacionesData);
+      } catch (error) {
+        console.error("Error al obtener las calificaciones:", error);
+      }
+    };
+
+    fetchCalificaciones();
+  }, []);
+
+  const getCalificacionByLeccion = (leccion) => {
+    if (!calificaciones) return null;
+
+    const calificacion = calificaciones.find(c => c.leccion === leccion);
+    return calificacion ? calificacion.score : null;
+  };
+
+  useEffect(() => {
+    getTask();
+  }, [])
+
   return (
     <>
       <div className='APP'>
@@ -66,6 +97,12 @@ export default function Redaccion() {
                       <li>Transiciones: Expresiones que indican el cambio de idea, tema o punto de vista en el texto, facilitando la comprensión y la secuencia lógica</li>
                       <small>Ejemplo: en primer lugar, por lo tanto, en resumen</small>
                     </ul>
+
+                    {getCalificacionByLeccion("Leccion1Reda") !== null ? (
+                  <h3>Tu calificación es: {getCalificacionByLeccion("Leccion1Reda")} </h3>
+                ) : (
+                  <a href="/LecFunReda">Realizar Cuestionario</a>
+                )}
                     </div>
                     </details>
                     <details>
@@ -94,6 +131,11 @@ export default function Redaccion() {
                           <li>Cita las fuentes de información que respaldan tus argumentos, como libros, artículos, investigaciones, entrevistas, entre otros.</li>
                           <li>Utiliza un estilo de citación y referencias bibliográficas adecuado, como APA, MLA, Chicago, según las normas académicas o profesionales establecidas.</li>
                         </ul>
+                        {getCalificacionByLeccion("Leccion2Reda") !== null ? (
+                  <h3>Tu calificación es: {getCalificacionByLeccion("Leccion2Reda")} </h3>
+                ) : (
+                  <a href="/LecArgu">Realizar Cuestionario</a>
+                )}
                       </div>
                     </details>
                     <details>
@@ -122,7 +164,11 @@ export default function Redaccion() {
                           <li>Organizar la información de forma lógica y secuencial, siguiendo una estructura clara y ordenada.</li>
                           <li>Revisar la consistencia en el uso de términos, conceptos y referencias a lo largo del texto para mantener la coherencia temática.</li>
                         </ul>
-                      
+                        {getCalificacionByLeccion("Leccion3Reda") !== null ? (
+                  <h3>Tu calificación es: {getCalificacionByLeccion("Leccion3Reda")} </h3>
+                ) : (
+                  <a href="/LecRevText">Realizar Cuestionario</a>
+                )}
                       </div>
                     </details>
         </section>

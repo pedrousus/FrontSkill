@@ -3,13 +3,14 @@ import Footer from './Footer,'
 import Header from './Header'
 import '../styles/App.css'
 import '../styles/Cuestionario.css'
-import {respfotosintesis} from '../assets/PreguntasCiencias';
+import {respTipos} from '../assets/PreguntasCiencias';
 import { scoreRequest } from '../api/task'
 
+
   
-export default function LecFotos () {
+export default function LecTipos () {
   let [index, setIndex] = useState(0);
-  let [question, setQuestion] = useState(respfotosintesis[index]);
+  let [question, setQuestion] = useState(respTipos[index]);
   let [lock, setLock] = useState(false);
   let [score, setScore] = useState(0);
   let [result, setResult] = useState(false);
@@ -22,8 +23,8 @@ export default function LecFotos () {
 
   const enviarScoreAlServidor = async () => {
     try {
-      const response = await scoreRequest(score, "Leccion1Fotosintesis");
-      setRespuestaServidor(response.respfotosintesis);
+      const response = await scoreRequest(score, "Leccion2Tipos");
+      setRespuestaServidor(response.respTipos);
     } catch (error) {
       console.error('Error al enviar el score al servidor:', error);
     }
@@ -46,7 +47,7 @@ export default function LecFotos () {
  
   const nextQuestion = () =>{
       if (lock === true){
-        if(index === respfotosintesis.length-1){
+        if(index === respTipos.length-1){
 
           setResult(true);
 
@@ -55,7 +56,7 @@ export default function LecFotos () {
 
         }
           setIndex(++index);
-          setQuestion(respfotosintesis[index]);
+          setQuestion(respTipos[index]);
           setLock(false);
           optArray.map((option)=>{
               option.current.classList.remove("wrong");
@@ -79,7 +80,7 @@ export default function LecFotos () {
     <div className="APP">
       <Header />
       <main>
-        <h1>Cuestionario 1: Fotosíntesis</h1>
+        <h1>Cuestionario 2: Tipos de Plantas</h1>
         <section className="Cuestionario">
             {result?<></>:<>
           {<h4>{index+1}.- Pregunta {question.question}</h4>  }
@@ -93,11 +94,11 @@ export default function LecFotos () {
           
           <button onClick={nextQuestion}>Next</button>
           
-          <div>{index+1} de {respfotosintesis.length} preguntas</div></>}
+          <div>{index+1} de {respTipos.length} preguntas</div></>}
 
           {result?<>
           
-          <h2>Obtuviste {score} de {respfotosintesis.length}</h2>
+          <h2>Obtuviste {score} de {respTipos.length}</h2>
           <a href='/Flora'>Regresar</a>
           </>:<></>
           }

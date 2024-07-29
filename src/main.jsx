@@ -29,12 +29,41 @@ import { TaskProvider } from "./context/taskContext.jsx";
 import Lec2SumRes from "./components/ExamSumasRestas2.jsx";
 import LecEspasss from "./components/espano.jsx";
 import LecOrtografia from "./components/ortografiaRes.jsx";
+//Examenes Flora
 import LecFotos from "./components/ExamFoto.jsx";
+import LecTipos from "./components/ExamTipos.jsx";
+import LecCiclos from "./components/ExamCiclos.jsx";
+import LecPartes from "./components/ExamPartes.jsx";
+import LecImport from "./components/ExamImport.jsx";
+//Examenes Fauna
+import LecTiposHabit from "./components/ExamTiposHabit.jsx";
+import LecAdap from "./components/ExamAdap.jsx";
+import LecRelac from "./components/ExamRelac.jsx";
+import LecCons from "./components/ExamCons.jsx";
+//Examenes Cuerpo
+import LecDigestivo from "./components/ExamDigestivo.jsx";
+import Lec2Circulatorio from "./components/EmanCirculatorio.jsx";
+import LecRespiratorio from "./components/ExamRespiratorio.jsx";
+//Examenes Fisica
+import LecCine from "./components/ExamCine.jsx";
+import LecDinamica from "./components/ExamDina.jsx";
+import LecEner from "./components/ExamEner.jsx";
+//Examenes Quimica
+import LecAtom from "./components/ExamAtomos.jsx";
+import LecEnlaces from "./components/ExamEnlaces.jsx";
+
+
+
+
 import Flora from "./pages/MateriaCiencias/Flora.jsx";
 import Fauna from "./pages/MateriaCiencias/Fauna.jsx";
 import Fisica from "./pages/MateriaCiencias/Fisica.jsx";
 import Quimica from "./pages/MateriaCiencias/Quimica.jsx";
 import CuerpoHumano from "./pages/MateriaCiencias/CuerpoHumano.jsx";
+import LecReacciones from "./components/ExamReacciones.jsx";
+
+
+
 
 const inicioSesionRegistroRoutes = [
   {
@@ -144,12 +173,86 @@ const otrasRutas = [
   {
     path: "/LecOrtografia",
     element: <LecOrtografia />,
-  },{
+  },
+  {
     path: "/LecFotos",
     element: <LecFotos />,
   },
-  
+  {
+    path: "/LecTipos",
+    element: <LecTipos />,
+  },
+  {
+    path: "/LecCiclos",
+    element: <LecCiclos />,
+  },
+  {
+    path: "/LecPartes",
+    element: <LecPartes />,
+  },
+  {
+    path: "/LecImport",
+    element: <LecImport />,
+  },
+  // Lecciones Fauna
+  {
+    path: "/LecTiposHabit",
+    element: <LecTiposHabit />,
+  },
+  {
+    path: "/LecAdap",
+    element: <LecAdap />,
+  },
+  {
+    path: "/LecRelac",
+    element: <LecRelac />,
+  },
+  {
+    path: "/LecCons",
+    element: <LecCons />,
+  },
 
+  //Lecciones Cuerpo Humano
+ 
+  {
+    path: "/LecCirculatorio",
+    element: <Lec2Circulatorio />,
+  },
+  {
+    path: "/LecDigestivo",
+    element: <LecDigestivo />,
+  },
+  {
+    path: "/LecRespiratorio",
+    element: <LecRespiratorio />,
+  },
+  //Fisica
+  {
+    path: "/LecCine",
+    element: <LecCine />,
+  },
+  {
+    path: "/LecDinamica",
+    element: <LecDinamica />,
+  },
+  {
+    path: "/LecEner",
+    element: <LecEner/>,
+  },
+
+//Quimica
+  {
+    path: "/LecAtom",
+    element: <LecAtom/>,
+  },
+  {
+    path: "/LecEnlaces",
+    element: <LecEnlaces/>
+  },
+  {
+    path: "/LecReacciones",
+    element: <LecReacciones/>
+  }
 ];
 
 // Función para envolver cada elemento de la ruta con RutasProtegidas

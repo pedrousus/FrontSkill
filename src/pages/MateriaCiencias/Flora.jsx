@@ -55,9 +55,7 @@ export default function Flora() {
           <details>
                 <summary>¿Qué voy a aprender?</summary>
                 <div>
-                <p>
-                En este curso sobre la flora, explorarás las características fundamentales de diferentes tipos de plantas, sus funciones, y sus roles en el ecosistema. Aprenderás a identificar diversas especies, comprender su importancia ecológica y económica, y conocer los procesos esenciales para su crecimiento y reproducción. Este curso te proporcionará una base sólida en botánica, ayudándote a apreciar la diversidad y complejidad del reino vegetal.
-                </p>
+                La flora, o el conjunto de plantas que habitan una región o ecosistema, es fundamental para la vida en la Tierra. Estas lecciones te proporcionarán un conocimiento profundo y amplio sobre diversos aspectos de la flora, permitiéndote comprender su importancia ecológica, biológica y económica. 
                 </div>
             </details>
 
@@ -109,119 +107,182 @@ export default function Flora() {
             </details>
          
             <details>
-                <summary>Lección 2: Acentuación de palabras agudas, graves, esdrújulas y sobreesdrújulas.</summary>
+                <summary>Lección 2: Tipos de Plantas.</summary>
                 <div>
-                <p>
-                
-La acentuación de palabras en español se basa en la ubicación de la sílaba tónica, es decir, la sílaba que se pronuncia con mayor intensidad en una palabra. Dependiendo de dónde se encuentre esta sílaba tónica, las palabras se clasifican en agudas, graves (o llanas), esdrújulas y sobreesdrújulas
-                </p>
-                <h5>Palabras agudas </h5>
-                    <p>
-                    Son aquellas cuya sílaba tónica es la última sílaba. Estas palabras llevan tilde (acento ortográfico) si terminan en vocal, "n" o "s".
-                    </p>
-                        <small> cajón, pared, Madrid, albornoz, casualidad, menú, reloj, coser, caminar, café, hotel</small>
+                <p>Las plantas son organismos esenciales en los ecosistemas, y se pueden clasificar en varios tipos según sus características y adaptaciones.</p>
+<p>Aquí te presento una clasificación básica de los tipos de plantas.</p>
 
-                <h5>Palabras graves o llanas </h5>
-                                    <p>
-                                    La sílaba tónica de estas palabras es la penúltima sílaba. Llevan tilde si no terminan en vocal, "n" o "s".
-                                    </p>
-                                        <small>árbol, música, fácil, mármol</small>
+<h2>Clasificación de las Plantas</h2>
 
-                <h5>Palabras esdrújulas </h5>
-                                    <p>
-                                    Tienen la sílaba tónica en la antepenúltima sílaba y siempre llevan tilde. 
-                                    </p>
-                                        <small>teléfono, fácilmente, rápido, cárcel. </small>
+<h3>Plantas no vasculares:</h3>
 
-                <h5>Palabras sobreesdrújulas </h5>
-                                    <p>
-                                    La sílaba tónica de estas palabras está antes de la antepenúltima sílaba y siempre llevan tilde. Este tipo de palabras es menos común en el español y suelen ser verbos en formas especiales o pronombres enclíticos con acento enfático.
-                                    </p>
-                                        <small>cántamelo, cómpratelo, díganselo.</small>
-                                        {getCalificacionByLeccion("Leccion2Espanol") !== null ? (
-                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion2Espanol")} </h3>
+<p><strong>Musgos:</strong> Plantas pequeñas que carecen de sistema vascular (xilema y floema).</p>
+<p>Crecen en lugares húmedos y sombreados.</p>
+<p><strong>Hepáticas:</strong> Plantas similares a los musgos, suelen crecer en ambientes muy húmedos y son más planas y delgadas.</p>
+
+<h3>Plantas vasculares:</h3>
+
+<p><strong>Pteridofitas (Helechos):</strong> Tienen un sistema vascular pero no producen semillas.</p>
+<p>Se reproducen mediante esporas.</p>
+<p><strong>Gimnospermas:</strong> Plantas vasculares que producen semillas no encerradas en frutos.</p>
+<p>Incluyen a las coníferas como pinos y abetos.</p>
+<p><strong>Angiospermas:</strong> Plantas vasculares que producen flores y semillas encerradas en frutos.</p>
+<p>Son las plantas más diversas y abundantes.</p>
+
+<h2>Clasificación de las Angiospermas</h2>
+
+<h3>Monocotiledóneas:</h3>
+
+<p>Tienen un solo cotiledón (hoja embrionaria).</p>
+<p>Hojas con venación paralela.</p>
+<p>Ejemplos: pastos, lirios, palmeras.</p>
+
+<h3>Dicotiledóneas:</h3>
+
+<p>Tienen dos cotiledones.</p>
+<p>Hojas con venación reticulada.</p>
+<p>Ejemplos: rosas, robles, girasoles.</p>
+
+<h2>Importancia de los Tipos de Plantas</h2>
+
+<p><strong>Ecología:</strong> Las plantas son la base de las cadenas alimenticias y contribuyen a la estabilidad de los ecosistemas.</p>
+<p><strong>Economía:</strong> Proporcionan alimentos, medicinas, madera y otros recursos.</p>
+<p><strong>Cultura:</strong> Han sido parte esencial de las culturas humanas, usadas en rituales, medicina tradicional y arte.</p>
+
+                                       
+                                     
+                                        {getCalificacionByLeccion("Leccion2Tipos") !== null ? (
+                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion2Tipos")} </h3>
                                         ) : (
-                                            <a href="/LecOrtografia">Realizar Cuestionario</a>
+                                            <a href="/LecTipos">Realizar Cuestionario</a>
                                         )}
                                   </div>
             </details>
 
             <details>
-                <summary>Lección 3: Las reglas de ortografía de la B y V</summary>
+                <summary>Lección 3: Cliclos de vida de una planta</summary>
                 <div>
-                <p>
-                
-La ortografía de las letras "B" y "V" en español es uno de los aspectos fundamentales de la gramática que requiere atención debido a la similitud en la pronunciación de ambas letras. Aunque en muchos dialectos del español actual estas letras suenan de manera muy similar o incluso idéntica, es crucial distinguirlas correctamente en la escritura para evitar errores ortográficos y garantizar una comunicación clara y precisa.
-                </p>
-                <h5>Uso de la "B":</h5>
-                <ul>
-                  <li>Cuando va seguida de las vocales "a", "o", "u", por ejemplo: "bailar", "boca", "bulto".</li>
-                  <li>Después de consonantes, como en "abril", "subrayar", "obstáculo".</li>
-                  <li>En palabras que terminan en "-bundo" o "-bunda", como "moribundo", "zámbula".</li>
-                  <li>En palabras que comienzan con los prefijos "bi-" y "biz-", como "bisabuelo", "bizantino".</li>
-                </ul>
-                <h5>Uso de la "V":</h5>
-                <ul>
-                  <li>Cuando va seguida de las vocales "e" e "i", como en "veinte", "viento", "vivir".</li>
-                  <li>En los verbos que terminan en "-ev", como "beber", "volver", "conmover".</li>
-                  <li>En palabras que comienzan con los prefijos "vice-" y "vices-", como "vicepresidente", "vicesecretario", "vicealmirante".</li>
-                  
-                </ul>
+                <h1>Ciclos de Vida de las Plantas</h1>
+
+<p>Las plantas tienen ciclos de vida complejos que varían entre diferentes grupos de plantas.</p>
+<p>Aquí se describen las principales etapas del ciclo de vida de las plantas:</p>
+
+<h2>Ciclos de Vida de las Plantas</h2>
+
+<h3>Germinación:</h3>
+<p>El proceso por el cual una semilla se convierte en una plántula.</p>
+<p>Requiere condiciones adecuadas de humedad, temperatura y oxígeno.</p>
+
+<h3>Crecimiento:</h3>
+<p>La plántula se desarrolla y crece mediante división celular y elongación.</p>
+<p>Incluye la formación de raíces, tallos y hojas.</p>
+
+<h3>Floración:</h3>
+<p>La planta madura produce flores, que son las estructuras reproductivas.</p>
+<p>Este proceso es influenciado por factores como la luz y la temperatura.</p>
+
+<h3>Polinización:</h3>
+<p>Transferencia de polen desde las anteras (parte masculina) hasta el estigma (parte femenina) de las flores.</p>
+<p>Puede ser realizada por viento, agua o animales.</p>
+
+<h3>Fecundación:</h3>
+<p>Unión de los gametos masculino (polen) y femenino (óvulo) para formar una semilla.</p>
+
+<h3>Fructificación:</h3>
+<p>Desarrollo de la semilla dentro del fruto, el cual protege y ayuda en la dispersión de la semilla.</p>
+
+<h3>Dispersión de semillas:</h3>
+<p>El proceso por el cual las semillas son transportadas lejos de la planta madre para germinar en nuevos lugares.</p>
+<p>Puede ser por viento, agua, animales o explosión de frutos.</p>
+{getCalificacionByLeccion("Leccion3Ciclos") !== null ? (
+                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion3Ciclos")} </h3>
+                                        ) : (
+                                            <a href="/LecCiclos">Realizar Cuestionario</a>
+                                        )}
                 </div>
             </details>
 
             <details>
-                <summary>Lección 4: Las reglas de ortografía de la G y J</summary>
+                <summary>Lección 4: Partes de una planta</summary>
                 <div>
-                <p>
-                
-La ortografía de las letras "G" y "J" en español es uno de los aspectos fundamentales de la gramática que requiere atención debido a la similitud en la pronunciación de ambas letras. Aunque en muchos dialectos del español actual estas letras suenan de manera muy similar o incluso idéntica, es crucial distinguirlas correctamente en la escritura para evitar errores ortográficos y garantizar una comunicación clara y precisa.
-                </p>
-                <h5>Uso de la "G":</h5>
-                <ul>
-                  <li>La "g" se utiliza antes de las vocales "a", "o", "u" y consonantes, como en "gato", "gota", "guerra", "gris".</li>
-                  <li>En los verbos que terminan en "-ger" y "-gir", como "proteger", "dirigir".</li>
-                  <li>Antes de la vocal "e" o "i" seguida de una "u" que no suene, como en "guerra", "guiso".</li>
-                </ul>
-                <h5>Uso de la "J":</h5>
-                <ul>
-                  <li>La "j" se usa para representar el sonido fuerte de la "jota", como en "juego", "joven", "jirafa".</li>
-                  <li>En los verbos que terminan en "-jar", como "viajar", "trabajar".</li>
-                  <li>En los adjetivos que terminan en "-joso" y "-judo", como "peligroso", "consecuente".</li>
-                  <li>En palabras de origen extranjero, como "jazz", "jersey".</li>
-                </ul>
-                <p>
-                Es importante recordar que la "g" y la "j" pueden tener sonidos similares en algunas palabras, pero su uso ortográfico es determinado por las reglas de la lengua española. Practicar la escritura y leer textos variados ayudará a familiarizarse con estas reglas y a escribir con mayor precisión.
-                </p>
+                <h1>Partes de una Planta</h1>
+
+<p>Las plantas están compuestas por varias partes esenciales que tienen funciones específicas.</p>
+<p>Aquí se describen las principales partes de una planta:</p>
+
+<h2>Partes de una Planta</h2>
+
+<h3>Raíz:</h3>
+<p>Absorbe agua y nutrientes del suelo.</p>
+<p>Ancla la planta al suelo.</p>
+<p>Almacena alimentos.</p>
+
+<h3>Tallo:</h3>
+<p>Soporta la planta y transporta agua y nutrientes entre las raíces y las hojas.</p>
+<p>Puede almacenar nutrientes.</p>
+<p>Algunos tallos realizan fotosíntesis.</p>
+
+<h3>Hojas:</h3>
+<p>Principal lugar de la fotosíntesis.</p>
+<p>Intercambian gases (CO₂, O₂) a través de estomas.</p>
+<p>Transpiran para regular la temperatura y transportar nutrientes.</p>
+
+<h3>Flores:</h3>
+<p>Estructuras reproductivas de las plantas angiospermas.</p>
+<p>Contienen órganos masculinos (estambres) y femeninos (pistilos).</p>
+
+<h3>Frutos:</h3>
+<p>Estructuras que protegen y ayudan en la dispersión de las semillas.</p>
+
+<h3>Semillas:</h3>
+<p>Contienen el embrión de la planta y los nutrientes necesarios para su germinación.</p>
+{getCalificacionByLeccion("Leccion4Partes") !== null ? (
+                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion4Partes")} </h3>
+                                        ) : (
+                                            <a href="/LecPartes">Realizar Cuestionario</a>
+                                        )}
                 </div>
             </details>
 
             <details>
-                <summary>Lección 5: Las reglas de ortografía de la C, S y Z</summary>
+                <summary>Lección 5: Importancia ecológica de las plantas</summary>
                 <div>
-                <p>
-                Las reglas de ortografía de la "c", "s" y "z" en español son fundamentales para escribir correctamente y evitar confusiones en la pronunciación de las palabras.
-                </p>
-                <h5>Uso de la "C":</h5>
-                <ul>
-                  <li>La "c" se utiliza antes de las vocales "a", "o", "u" y consonantes, como en "casa", "coco", "cuaderno", "clase".</li>
-                  <li>En palabras que terminan en "-ción", "-cto" y "-cte", como "acción", "dictado", "conducta".</li>
-                  <li>En los verbos que terminan en "-cer" y "-cir", como "conocer", "decir".</li>
-                </ul>
+                <h1>Importancia Ecológica de las Plantas</h1>
 
-                <h5>Uso de la "S":</h5>
-                <ul>
-                  <li>La "s" se usa para representar el sonido de la "ese", como en "sol", "mesa", "rosa".</li>
-                  <li>En palabras que terminan en "-sión", "-sión", "-sivo" y "-siva", como "expresión", "comisión", "decisivo", "ofensiva".</li>
-                  <li>Antes de las consonantes "b", "v", "m" y "n", como en "submarino", "observar", "insomnio"</li>
-                </ul>
+<p>Las plantas desempeñan roles vitales en los ecosistemas y tienen una gran importancia ecológica.</p>
+<p>Aquí se describen algunas de sus funciones ecológicas clave:</p>
 
-                <h5>Uso de la "Z":</h5>
-                <ul>
-                  <li>La "z" se utiliza para representar el sonido de la "zeta", como en "zapato", "zorro", "luz".</li>
-                  <li>En palabras que terminan en "-zón", "-zuela", como "expresión", "cabezuela".</li>
-                  <li>En los verbos que terminan en "-zar", como "organizar", "empezar".</li>
-                </ul>
+<h2>Importancia Ecológica de las Plantas</h2>
+
+<h3>Producción de Oxígeno:</h3>
+<p>Las plantas liberan oxígeno a la atmósfera durante la fotosíntesis, lo cual es esencial para la vida de la mayoría de los organismos.</p>
+
+<h3>Base de la Cadena Alimentaria:</h3>
+<p>Las plantas son productores primarios, convirtiendo la energía solar en energía química que es utilizada por herbívoros y otros niveles tróficos.</p>
+
+<h3>Ciclo de Nutrientes:</h3>
+<p>Las plantas absorben nutrientes del suelo y los reciclan a través de la descomposición de materia orgánica.</p>
+
+<h3>Hábitat y Refugio:</h3>
+<p>Las plantas proporcionan hábitat y refugio para numerosos organismos, incluyendo insectos, aves y mamíferos.</p>
+
+<h3>Regulación del Clima:</h3>
+<p>Las plantas ayudan a regular el clima al absorber dióxido de carbono y liberar oxígeno.</p>
+<p>También influyen en la humedad del aire y la estabilidad del suelo.</p>
+
+<h3>Purificación del Aire:</h3>
+<p>Las plantas filtran contaminantes del aire, mejorando la calidad del mismo.</p>
+
+<h3>Prevención de la Erosión:</h3>
+<p>Las raíces de las plantas ayudan a mantener el suelo en su lugar, previniendo la erosión.</p>
+
+<h3>Control del Agua:</h3>
+<p>Las plantas ayudan a regular el ciclo del agua, aumentando la infiltración y reduciendo la escorrentía.</p>
+{getCalificacionByLeccion("Leccion5Import") !== null ? (
+                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion5Import")} </h3>
+                                        ) : (
+                                            <a href="/LecImport">Realizar Cuestionario</a>
+                                        )}
                 </div>
             </details>
 

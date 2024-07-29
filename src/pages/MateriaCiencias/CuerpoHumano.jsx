@@ -55,126 +55,109 @@ export default function CuerpoHumano() {
           <details>
                 <summary>¿Qué voy a aprender?</summary>
                 <div>
-                <p>
-                En este curso de ortografía, explorarás las reglas fundamentales de la correcta escritura en español. Aprenderás a utilizar adecuadamente las tildes, las letras b y v, las letras c y s, así como otros aspectos importantes de la gramática y la puntuación que te ayudarán a mejorar tu habilidad para escribir de manera clara y precisa. Mediante ejercicios prácticos y ejemplos claros, adquirirás las herramientas necesarias para evitar errores comunes y comunicarte de manera efectiva en cualquier contexto escrito.
-                </p>
+                El cuerpo humano es una maravilla de la biología, compuesto por sistemas y órganos que trabajan en conjunto para mantener la vida. Estas lecciones te proporcionarán un conocimiento detallado sobre la estructura y funcionamiento del cuerpo humano, permitiéndote comprender cómo cada parte contribuye al bienestar general.
                 </div>
             </details>
 
           <details>
-                <summary>Lección 1: Uso de mayúsculas y minúsculas</summary>
+                <summary>Lección 1: Sistema Digestivo</summary>
                 <div>
-                <p>
-                En esta lección aprenderás la importancia y las reglas fundamentales para el uso adecuado de mayúsculas y minúsculas en el idioma español. 
-                </p>
-                <p>Algunas reglas importantes son:</p>
-                <ul>
-                  <li>Las Mayusculas siempre van al inicio de las oraciones.</li>
-                  <li>Los nombres propios siempre inician con mayúsculas.</li>
-                  <li>Los nombres de océanos, mares, ríos, montañas, etc., se escriben con mayúscula.</li>
-                  <li> Los títulos de libros, películas, canciones, etc., se escriben con mayúscula en la primera letra y en las palabras importantes, como nombres propios y sustantivos. </li>
-                  <li>Las siglas y abreviaturas se escriben en mayúsculas</li>
-                </ul>
+                <h1>Sistema Digestivo</h1>
 
-                
-                    <h5>Ejemplo 1</h5>
-                    <p>
-                        Mayúscula inicial de oraciones 
-                    </p>
-                        <small>Incorrecto: la casa está en la colina. <br />
-Correcto: La casa está en la colina.</small>
-                    <h5>Ejemplo 2</h5>
-                    <p>
-                        Nombres propios
-                    </p>
-                        <small>Incorrecto: maría vive en barcelona. <br />
-Correcto: María vive en Barcelona.</small>
-                    <h5>Ejemplo 3</h5>
-                    <p>
-                        Nombres geográficos 
-                    </p>
-                        <small>Incorrecto: montaña de la mesa en sudáfrica. <br />
-Correcto: Montaña de la Mesa en Sudáfrica.</small>
-                    <h5>Ejemplo 4</h5>
-                    <p>
-                        Titulos de obras 
-                    </p>
-                        <small>Incorrecto: el libro "cien años de soledad" es muy famoso. <br />
-Correcto: El libro "Cien años de soledad" es muy famoso.</small>
-                    <h5>Ejemplo 5</h5>
-                    <p>
-                        Siglas y abreviaturas
-                    </p>
-                        <small>Incorrecto: la onu tiene sedes en varios países. <br />
-Correcto: La ONU tiene sedes en varios países.</small>
-                {getCalificacionByLeccion("Leccion1Espanol") !== null ? (
-                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion1Espanol")} </h3>
+<p>El sistema digestivo es responsable de descomponer los alimentos que ingerimos en nutrientes que el cuerpo puede usar para energía, crecimiento y reparación celular.</p>
+
+<h2>Boca</h2>
+<p>La digestión comienza en la boca, donde los alimentos son masticados y mezclados con saliva, que contiene enzimas que inician la descomposición de los carbohidratos.</p>
+
+<h2>Esófago</h2>
+<p>El esófago es un tubo muscular que conecta la boca con el estómago. Los movimientos peristálticos del esófago empujan los alimentos hacia el estómago.</p>
+
+<h2>Estómago</h2>
+<p>El estómago mezcla los alimentos con jugos gástricos, que contienen ácido clorhídrico y enzimas digestivas. Aquí se descomponen las proteínas.</p>
+
+<h2>Intestino Delgado</h2>
+<p>En el intestino delgado, los nutrientes son absorbidos en el torrente sanguíneo. Está compuesto por tres partes: duodeno, yeyuno e íleon.</p>
+
+<h2>Intestino Grueso</h2>
+<p>El intestino grueso absorbe el agua y los minerales de los restos de alimentos no digeridos, formando las heces que serán excretadas.</p>
+
+<h2>Órganos Accesorios</h2>
+<p>Los órganos accesorios, como el hígado, el páncreas y la vesícula biliar, producen sustancias que ayudan en la digestión y la absorción de nutrientes.</p>
+
+                {getCalificacionByLeccion("Leccion1Digestivo") !== null ? (
+                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion1Digestivo")} </h3>
                                         ) : (
-                                            <a href="/resEspanol">Realizar Cuestionario</a>
+                                            <a href="/LecDigestivo">Realizar Cuestionario</a>
                                         )}
                 </div>
               
             </details>
          
             <details>
-                <summary>Lección 2: Acentuación de palabras agudas, graves, esdrújulas y sobreesdrújulas.</summary>
+                <summary>Lección 2: Sistema Circulatorio</summary>
                 <div>
-                <p>
-                
-La acentuación de palabras en español se basa en la ubicación de la sílaba tónica, es decir, la sílaba que se pronuncia con mayor intensidad en una palabra. Dependiendo de dónde se encuentre esta sílaba tónica, las palabras se clasifican en agudas, graves (o llanas), esdrújulas y sobreesdrújulas
-                </p>
-                <h5>Palabras agudas </h5>
-                    <p>
-                    Son aquellas cuya sílaba tónica es la última sílaba. Estas palabras llevan tilde (acento ortográfico) si terminan en vocal, "n" o "s".
-                    </p>
-                        <small> cajón, pared, Madrid, albornoz, casualidad, menú, reloj, coser, caminar, café, hotel</small>
+                <h1>Sistema Circulatorio</h1>
 
-                <h5>Palabras graves o llanas </h5>
-                                    <p>
-                                    La sílaba tónica de estas palabras es la penúltima sílaba. Llevan tilde si no terminan en vocal, "n" o "s".
-                                    </p>
-                                        <small>árbol, música, fácil, mármol</small>
+<p>El sistema circulatorio es responsable de transportar sangre, nutrientes, gases y desechos hacia y desde las células del cuerpo.</p>
 
-                <h5>Palabras esdrújulas </h5>
-                                    <p>
-                                    Tienen la sílaba tónica en la antepenúltima sílaba y siempre llevan tilde. 
-                                    </p>
-                                        <small>teléfono, fácilmente, rápido, cárcel. </small>
+<h2>Corazón</h2>
+<p>El corazón es un órgano muscular que bombea sangre a través de todo el cuerpo. Está dividido en cuatro cavidades: dos aurículas y dos ventrículos.</p>
 
-                <h5>Palabras sobreesdrújulas </h5>
-                                    <p>
-                                    La sílaba tónica de estas palabras está antes de la antepenúltima sílaba y siempre llevan tilde. Este tipo de palabras es menos común en el español y suelen ser verbos en formas especiales o pronombres enclíticos con acento enfático.
-                                    </p>
-                                        <small>cántamelo, cómpratelo, díganselo.</small>
-                                        {getCalificacionByLeccion("Leccion2Espanol") !== null ? (
-                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion2Espanol")} </h3>
+<h2>Vasos Sanguíneos</h2>
+<p>Existen tres tipos principales de vasos sanguíneos: arterias, venas y capilares.</p>
+<ul>
+    <li>Arterias: Llevan la sangre rica en oxígeno desde el corazón hacia el resto del cuerpo.</li>
+    <li>Venas: Devuelven la sangre pobre en oxígeno al corazón.</li>
+    <li>Capilares: Pequeños vasos donde se produce el intercambio de gases, nutrientes y desechos.</li>
+</ul>
+
+<h2>Sangre</h2>
+<p>La sangre es un tejido líquido que transporta células y sustancias vitales por todo el cuerpo. Está compuesta por plasma, glóbulos rojos, glóbulos blancos y plaquetas.</p>
+
+<h2>Circuitos Circulatorios</h2>
+<p>El sistema circulatorio tiene dos circuitos principales:</p>
+<ul>
+    <li>Circuito Pulmonar: Lleva la sangre desde el corazón a los pulmones y de vuelta al corazón.</li>
+    <li>Circuito Sistémico: Lleva la sangre desde el corazón al resto del cuerpo y de vuelta al corazón.</li>
+</ul>
+
+                                        {getCalificacionByLeccion("Leccion2Circulatorio") !== null ? (
+                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion2Circulatorio")} </h3>
                                         ) : (
-                                            <a href="/LecOrtografia">Realizar Cuestionario</a>
+                                            <a href="/LecCirculatorio">Realizar Cuestionario</a>
                                         )}
                                   </div>
             </details>
 
             <details>
-                <summary>Lección 3: Las reglas de ortografía de la B y V</summary>
+                <summary>Lección 3: Sistema Respiratorio</summary>
                 <div>
-                <p>
-                
-La ortografía de las letras "B" y "V" en español es uno de los aspectos fundamentales de la gramática que requiere atención debido a la similitud en la pronunciación de ambas letras. Aunque en muchos dialectos del español actual estas letras suenan de manera muy similar o incluso idéntica, es crucial distinguirlas correctamente en la escritura para evitar errores ortográficos y garantizar una comunicación clara y precisa.
-                </p>
-                <h5>Uso de la "B":</h5>
-                <ul>
-                  <li>Cuando va seguida de las vocales "a", "o", "u", por ejemplo: "bailar", "boca", "bulto".</li>
-                  <li>Después de consonantes, como en "abril", "subrayar", "obstáculo".</li>
-                  <li>En palabras que terminan en "-bundo" o "-bunda", como "moribundo", "zámbula".</li>
-                  <li>En palabras que comienzan con los prefijos "bi-" y "biz-", como "bisabuelo", "bizantino".</li>
-                </ul>
-                <h5>Uso de la "V":</h5>
-                <ul>
-                  <li>Cuando va seguida de las vocales "e" e "i", como en "veinte", "viento", "vivir".</li>
-                  <li>En los verbos que terminan en "-ev", como "beber", "volver", "conmover".</li>
-                  <li>En palabras que comienzan con los prefijos "vice-" y "vices-", como "vicepresidente", "vicesecretario", "vicealmirante".</li>
-                  
-                </ul>
+                <h1>Sistema Respiratorio</h1>
+
+<p>El sistema respiratorio es responsable de llevar oxígeno a los pulmones y expulsar dióxido de carbono del cuerpo.</p>
+
+<h2>Nariz y Cavidad Nasal</h2>
+<p>El aire entra al cuerpo a través de la nariz, donde es filtrado, calentado y humidificado antes de pasar a los pulmones.</p>
+
+<h2>Faringe y Laringe</h2>
+<p>La faringe sirve como un pasaje para el aire y los alimentos, mientras que la laringe contiene las cuerdas vocales y es responsable de la producción de sonido.</p>
+
+<h2>Tráquea</h2>
+<p>La tráquea es un tubo que lleva el aire desde la laringe a los bronquios. Está reforzada por anillos de cartílago para evitar su colapso.</p>
+
+<h2>Bronquios y Bronquiolos</h2>
+<p>Los bronquios son dos tubos que se ramifican desde la tráquea hacia cada pulmón. Dentro de los pulmones, se dividen en bronquiolos más pequeños.</p>
+
+<h2>Alvéolos</h2>
+<p>Los alvéolos son pequeñas bolsas de aire en los pulmones donde se produce el intercambio de gases entre el aire y la sangre.</p>
+
+<h2>Diafragma</h2>
+<p>El diafragma es un músculo que ayuda a expandir y contraer los pulmones para permitir la respiración.</p>
+{getCalificacionByLeccion("Leccion3Respiratorio") !== null ? (
+                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion3Respiratorio")} </h3>
+                                        ) : (
+                                            <a href="/LecRespiratorio">Realizar Cuestionario</a>
+                                        )}
                 </div>
             </details>
 

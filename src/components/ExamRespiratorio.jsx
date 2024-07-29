@@ -1,15 +1,15 @@
 import { useRef, useState} from 'react'
-import Footer from './Footer,'
-import Header from './Header'
+import Footer from '../components/Footer,'
+import Header from '../components/Header'
 import '../styles/App.css'
 import '../styles/Cuestionario.css'
-import {respfotosintesis} from '../assets/PreguntasCiencias';
 import { scoreRequest } from '../api/task'
+import {respRespiratorio } from '../assets/PreguntasCiencias' 
 
   
-export default function LecFotos () {
+export default function LecRespiratorio () {
   let [index, setIndex] = useState(0);
-  let [question, setQuestion] = useState(respfotosintesis[index]);
+  let [question, setQuestion] = useState(respRespiratorio[index]);
   let [lock, setLock] = useState(false);
   let [score, setScore] = useState(0);
   let [result, setResult] = useState(false);
@@ -22,8 +22,8 @@ export default function LecFotos () {
 
   const enviarScoreAlServidor = async () => {
     try {
-      const response = await scoreRequest(score, "Leccion1Fotosintesis");
-      setRespuestaServidor(response.respfotosintesis);
+      const response = await scoreRequest(score, "Leccion3Respiratorio");
+      setRespuestaServidor(response.respRespiratorio);
     } catch (error) {
       console.error('Error al enviar el score al servidor:', error);
     }
@@ -46,7 +46,7 @@ export default function LecFotos () {
  
   const nextQuestion = () =>{
       if (lock === true){
-        if(index === respfotosintesis.length-1){
+        if(index === respRespiratorio.length-1){
 
           setResult(true);
 
@@ -55,7 +55,7 @@ export default function LecFotos () {
 
         }
           setIndex(++index);
-          setQuestion(respfotosintesis[index]);
+          setQuestion(respRespiratorio[index]);
           setLock(false);
           optArray.map((option)=>{
               option.current.classList.remove("wrong");
@@ -79,7 +79,7 @@ export default function LecFotos () {
     <div className="APP">
       <Header />
       <main>
-        <h1>Cuestionario 1: Fotosíntesis</h1>
+        <h1>Cuestionario 3: Sistema Respiratorio</h1>
         <section className="Cuestionario">
             {result?<></>:<>
           {<h4>{index+1}.- Pregunta {question.question}</h4>  }
@@ -93,12 +93,12 @@ export default function LecFotos () {
           
           <button onClick={nextQuestion}>Next</button>
           
-          <div>{index+1} de {respfotosintesis.length} preguntas</div></>}
+          <div>{index+1} de {respRespiratorio.length} preguntas</div></>}
 
           {result?<>
           
-          <h2>Obtuviste {score} de {respfotosintesis.length}</h2>
-          <a href='/Flora'>Regresar</a>
+          <h2>Obtuviste {score} de {respRespiratorio.length}</h2>
+          <a href='/CuerpoHumano'>Regresar</a>
           </>:<></>
           }
         </section>

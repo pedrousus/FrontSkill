@@ -55,126 +55,80 @@ export default function Fisica() {
           <details>
                 <summary>¿Qué voy a aprender?</summary>
                 <div>
-                <p>
-                En este curso de ortografía, explorarás las reglas fundamentales de la correcta escritura en español. Aprenderás a utilizar adecuadamente las tildes, las letras b y v, las letras c y s, así como otros aspectos importantes de la gramática y la puntuación que te ayudarán a mejorar tu habilidad para escribir de manera clara y precisa. Mediante ejercicios prácticos y ejemplos claros, adquirirás las herramientas necesarias para evitar errores comunes y comunicarte de manera efectiva en cualquier contexto escrito.
-                </p>
+                La física es la ciencia que estudia las propiedades y el comportamiento de la materia y la energía. Estas lecciones te proporcionarán un conocimiento profundo y amplio sobre diversos principios y fenómenos físicos, permitiéndote comprender las leyes fundamentales que gobiernan el universo.
                 </div>
             </details>
 
           <details>
-                <summary>Lección 1: Uso de mayúsculas y minúsculas</summary>
+                <summary>Lección 1: Cinemática</summary>
                 <div>
-                <p>
-                En esta lección aprenderás la importancia y las reglas fundamentales para el uso adecuado de mayúsculas y minúsculas en el idioma español. 
-                </p>
-                <p>Algunas reglas importantes son:</p>
-                <ul>
-                  <li>Las Mayusculas siempre van al inicio de las oraciones.</li>
-                  <li>Los nombres propios siempre inician con mayúsculas.</li>
-                  <li>Los nombres de océanos, mares, ríos, montañas, etc., se escriben con mayúscula.</li>
-                  <li> Los títulos de libros, películas, canciones, etc., se escriben con mayúscula en la primera letra y en las palabras importantes, como nombres propios y sustantivos. </li>
-                  <li>Las siglas y abreviaturas se escriben en mayúsculas</li>
-                </ul>
-
-                
-                    <h5>Ejemplo 1</h5>
-                    <p>
-                        Mayúscula inicial de oraciones 
-                    </p>
-                        <small>Incorrecto: la casa está en la colina. <br />
-Correcto: La casa está en la colina.</small>
-                    <h5>Ejemplo 2</h5>
-                    <p>
-                        Nombres propios
-                    </p>
-                        <small>Incorrecto: maría vive en barcelona. <br />
-Correcto: María vive en Barcelona.</small>
-                    <h5>Ejemplo 3</h5>
-                    <p>
-                        Nombres geográficos 
-                    </p>
-                        <small>Incorrecto: montaña de la mesa en sudáfrica. <br />
-Correcto: Montaña de la Mesa en Sudáfrica.</small>
-                    <h5>Ejemplo 4</h5>
-                    <p>
-                        Titulos de obras 
-                    </p>
-                        <small>Incorrecto: el libro "cien años de soledad" es muy famoso. <br />
-Correcto: El libro "Cien años de soledad" es muy famoso.</small>
-                    <h5>Ejemplo 5</h5>
-                    <p>
-                        Siglas y abreviaturas
-                    </p>
-                        <small>Incorrecto: la onu tiene sedes en varios países. <br />
-Correcto: La ONU tiene sedes en varios países.</small>
-                {getCalificacionByLeccion("Leccion1Espanol") !== null ? (
-                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion1Espanol")} </h3>
+                <h1>Cinemática</h1>
+    <p>La cinemática es la rama de la física que estudia el movimiento de los cuerpos sin considerar las causas que lo producen. Algunos conceptos fundamentales en cinemática son:</p>
+    
+    <p><strong>Desplazamiento:</strong> Es el cambio de posición de un objeto desde su punto inicial hasta su punto final. Es una magnitud vectorial, lo que significa que tiene magnitud y dirección.</p>
+    
+    <p><strong>Velocidad:</strong> Es el cambio de posición de un objeto por unidad de tiempo. Puede ser media o instantánea. La velocidad media se calcula como el desplazamiento dividido por el tiempo total.</p>
+    
+    <p><strong>Aceleración:</strong> Es el cambio de velocidad de un objeto por unidad de tiempo. Es una magnitud vectorial que puede ser positiva &#40;cuando el objeto acelera&#41; o negativa &#40;cuando el objeto desacelera&#41;.</p>
+    
+    <p><strong>Movimiento rectilíneo uniforme &#40;MRU&#41;:</strong> Es aquel en el que un objeto se mueve en línea recta con velocidad constante. La ecuación de posición es x = x&#42; + vt.</p>
+    
+    <p><strong>Movimiento uniformemente acelerado &#40;MUA&#41;:</strong> Es aquel en el que un objeto se mueve en línea recta con aceleración constante. Las ecuaciones de movimiento son:
+     v = v&#42; + at
+     x = x&#42; + v&#42;t + 1/2 at&sup2;
+     v&sup2; = v&#42;&sup2; + 2a&#40;x - x&#42;&#41;</p>
+                {getCalificacionByLeccion("Leccion1Cinematica") !== null ? (
+                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion1Cinematica")} </h3>
                                         ) : (
-                                            <a href="/resEspanol">Realizar Cuestionario</a>
+                                            <a href="/LecCine">Realizar Cuestionario</a>
                                         )}
                 </div>
               
             </details>
          
             <details>
-                <summary>Lección 2: Acentuación de palabras agudas, graves, esdrújulas y sobreesdrújulas.</summary>
+                <summary>Lección 2: Dinámica</summary>
                 <div>
-                <p>
-                
-La acentuación de palabras en español se basa en la ubicación de la sílaba tónica, es decir, la sílaba que se pronuncia con mayor intensidad en una palabra. Dependiendo de dónde se encuentre esta sílaba tónica, las palabras se clasifican en agudas, graves (o llanas), esdrújulas y sobreesdrújulas
-                </p>
-                <h5>Palabras agudas </h5>
-                    <p>
-                    Son aquellas cuya sílaba tónica es la última sílaba. Estas palabras llevan tilde (acento ortográfico) si terminan en vocal, "n" o "s".
-                    </p>
-                        <small> cajón, pared, Madrid, albornoz, casualidad, menú, reloj, coser, caminar, café, hotel</small>
-
-                <h5>Palabras graves o llanas </h5>
-                                    <p>
-                                    La sílaba tónica de estas palabras es la penúltima sílaba. Llevan tilde si no terminan en vocal, "n" o "s".
-                                    </p>
-                                        <small>árbol, música, fácil, mármol</small>
-
-                <h5>Palabras esdrújulas </h5>
-                                    <p>
-                                    Tienen la sílaba tónica en la antepenúltima sílaba y siempre llevan tilde. 
-                                    </p>
-                                        <small>teléfono, fácilmente, rápido, cárcel. </small>
-
-                <h5>Palabras sobreesdrújulas </h5>
-                                    <p>
-                                    La sílaba tónica de estas palabras está antes de la antepenúltima sílaba y siempre llevan tilde. Este tipo de palabras es menos común en el español y suelen ser verbos en formas especiales o pronombres enclíticos con acento enfático.
-                                    </p>
-                                        <small>cántamelo, cómpratelo, díganselo.</small>
-                                        {getCalificacionByLeccion("Leccion2Espanol") !== null ? (
-                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion2Espanol")} </h3>
+                <h1>Dinámica</h1>
+    <p>La dinámica es la rama de la física que estudia las causas del movimiento de los cuerpos. Algunos conceptos fundamentales en dinámica son:</p>
+    
+    <p><strong>Primera ley de Newton &#40;Ley de la Inercia&#41;:</strong> Un objeto permanecerá en reposo o en movimiento rectilíneo uniforme a menos que actúe sobre él una fuerza neta externa.</p>
+    
+    <p><strong>Segunda ley de Newton:</strong> La aceleración de un objeto es directamente proporcional a la fuerza neta que actúa sobre él e inversamente proporcional a su masa. La fórmula es F = ma.</p>
+    
+    <p><strong>Tercera ley de Newton &#40;Acción y Reacción&#41;:</strong> Para cada acción hay una reacción igual y opuesta.</p>
+    
+    <p><strong>Fuerza:</strong> Es una interacción que, al aplicarse sobre un objeto, cambia su estado de movimiento o su forma. Es una magnitud vectorial.</p>
+    
+    <p><strong>Fricción:</strong> Es la fuerza que se opone al movimiento relativo de dos superficies en contacto. Puede ser estática &#40;impide el inicio del movimiento&#41; o cinética &#40;se opone al movimiento en curso&#41;.</p>
+                                        {getCalificacionByLeccion("Leccion2Dinamica") !== null ? (
+                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion2Dinamica")} </h3>
                                         ) : (
-                                            <a href="/LecOrtografia">Realizar Cuestionario</a>
+                                            <a href="/LecDinamica">Realizar Cuestionario</a>
                                         )}
                                   </div>
             </details>
 
             <details>
-                <summary>Lección 3: Las reglas de ortografía de la B y V</summary>
+                <summary>Lección 3: Energía y Trabajo</summary>
                 <div>
-                <p>
-                
-La ortografía de las letras "B" y "V" en español es uno de los aspectos fundamentales de la gramática que requiere atención debido a la similitud en la pronunciación de ambas letras. Aunque en muchos dialectos del español actual estas letras suenan de manera muy similar o incluso idéntica, es crucial distinguirlas correctamente en la escritura para evitar errores ortográficos y garantizar una comunicación clara y precisa.
-                </p>
-                <h5>Uso de la "B":</h5>
-                <ul>
-                  <li>Cuando va seguida de las vocales "a", "o", "u", por ejemplo: "bailar", "boca", "bulto".</li>
-                  <li>Después de consonantes, como en "abril", "subrayar", "obstáculo".</li>
-                  <li>En palabras que terminan en "-bundo" o "-bunda", como "moribundo", "zámbula".</li>
-                  <li>En palabras que comienzan con los prefijos "bi-" y "biz-", como "bisabuelo", "bizantino".</li>
-                </ul>
-                <h5>Uso de la "V":</h5>
-                <ul>
-                  <li>Cuando va seguida de las vocales "e" e "i", como en "veinte", "viento", "vivir".</li>
-                  <li>En los verbos que terminan en "-ev", como "beber", "volver", "conmover".</li>
-                  <li>En palabras que comienzan con los prefijos "vice-" y "vices-", como "vicepresidente", "vicesecretario", "vicealmirante".</li>
-                  
-                </ul>
+                <h1>Energía y Trabajo</h1>
+    <p>La energía es la capacidad de realizar trabajo. El trabajo es una medida de la energía transferida por una fuerza a lo largo de un desplazamiento. Algunos conceptos fundamentales son:</p>
+    
+    <p><strong>Energía cinética:</strong> Es la energía que posee un objeto debido a su movimiento. La fórmula es E&#42; = 1/2 mv&sup2;.</p>
+    
+    <p><strong>Energía potencial:</strong> Es la energía que posee un objeto debido a su posición o configuración. Existen diferentes tipos, como la energía potencial gravitatoria &#40;E&#42; = mgh&#41; y la energía potencial elástica.</p>
+    
+    <p><strong>Trabajo:</strong> Es la transferencia de energía que ocurre cuando una fuerza se aplica sobre un objeto y este se desplaza en la dirección de la fuerza. La fórmula es W = Fd cos&#40;&theta;&#41;.</p>
+    
+    <p><strong>Potencia:</strong> Es la cantidad de trabajo realizado por unidad de tiempo. La fórmula es P = W/t.</p>
+    
+    <p><strong>Conservación de la energía:</strong> La energía no se crea ni se destruye, solo se transforma de una forma a otra. La energía total de un sistema aislado permanece constante.</p>
+{getCalificacionByLeccion("Leccion2Espanol") !== null ? (
+                                            <h3>Tu calificación es: {getCalificacionByLeccion("Leccion2Espanol")} </h3>
+                                        ) : (
+                                            <a href="/LecOrtografia">Realizar Cuestionario</a>
+                                        )}
                 </div>
             </details>
 
